@@ -1,0 +1,77 @@
+   /* Estilo para los contenedores de descarga */
+    .content-descarga {
+      display: inline-block;
+      width: 100%;
+      max-width: 250px; /* Ajusta el ancho máximo según tu diseño */
+      margin: 10px;
+      padding: 10px;
+      background: #f1f6ff;
+      text-align: center;
+      border: 2px solid #adcaff;
+    }
+
+    .content-descarga:hover {
+      transform: scale(1.05);
+    }
+    
+    /* Estilo para el enlace de descarga */
+    .descarga-ahora {
+      display: none;
+      text-decoration: none;
+      padding: 10px 15px;
+      background: #286ef2;
+      color: #fff;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+    
+    .descarga-ahora:hover {
+      opacity: 0.9;
+    }
+    
+    /* Estilo para los botones de descarga */
+    .btn-descarga {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #286ef2;
+      color: #fff;
+      border: none;
+      font-size: 14px;
+      margin-top: 10px;
+      border-radius: 3px;
+      outline: 0;
+      
+    }
+    
+    .btn-descarga:hover {
+      opacity: 0.9;
+    }
+    
+    .btn-rojo {
+      background: #e74c3c;
+    }
+    
+    .btn-verde {
+      background: #2ecc71;
+    }
+    
+    .btn-amarillo {
+      background: #f39c12;
+    }
+    
+    .btn-gris {
+      background: #95a5a6;
+    }
+    
+    .btn-morado {
+      background: #9b59b6;
+    }
+    
+    .btn-azul {
+      background: #3498db;
+    }
+    
+    /* Estilo para los íconos */
+    .content-descarga i {
+      margin-left: 5px;
+    }
