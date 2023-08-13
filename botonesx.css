@@ -8,7 +8,6 @@
       background: #f1f6ff;
       text-align: center;
       border: 2px solid #adcaff;
-      transition: transform 0.2s ease-in-out;
     }
 
     .content-descarga:hover {
