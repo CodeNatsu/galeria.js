@@ -1,0 +1,55 @@
+/* Estilos para el contenedor */
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Ajusta la altura como prefieras */
+    }
+
+    /* Estilos para el botón de Telegram */
+    .telegram-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #1E90FF; /* Color celeste */
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Agregado box-shadow */
+      font-family: Arial, sans-serif;
+    }
+
+    /* Estilos para el icono */
+    .telegram-button i {
+      margin-right: 10px;
+    }
+
+    /* Cambiar color al pasar el mouse y agregar sombra */
+    .telegram-button:hover {
+      background-color: #1874CD;
+      box-shadow: 0 0 10px rgba(128, 128, 128, 0.5); /* Agregada sombra gris */
+    }
+
+    /* Estilos para el tooltip */
+    .telegram-button:hover::before {
+      content: "Entra al grupo de Telegram";
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 12px;
+      bottom: 110%; /* Ubicación del tooltip con respecto al botón */
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .telegram-button:hover::before {
+      opacity: 1;
+      visibility: visible;
+    }
