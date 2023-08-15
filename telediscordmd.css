@@ -1,0 +1,69 @@
+    /* Estilos para los botones */
+    .social-buttons-container {
+      display: flex;
+      gap: 10px; /* Espacio entre los botones */
+      justify-content: center;
+      align-items: center;
+      margin: 20px; /* Margen para separar de los bordes */
+    }
+
+    .social-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+    /* Estilos para el icono */
+    .social-button i {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+
+    /* Estilos para el botón de Telegram */
+    .telegram-button {
+      background-color: #1E90FF; /* Color celeste */
+      color: white;
+    }
+
+    /* Estilos para el botón de Discord */
+    .discord-button {
+      background-color: #7289DA; /* Color de Discord */
+      color: white;
+    }
+
+    /* Cambiar color al pasar el mouse y agregar sombra */
+    .social-button:hover {
+      background-color: #1874CD;
+      box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+    }
+
+    /* Estilos para el tooltip */
+    .social-button:hover::before {
+      content: attr(data-tooltip);
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 12px;
+      bottom: 110%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .social-button:hover::before {
+      opacity: 1;
+      visibility: visible;
+    }
