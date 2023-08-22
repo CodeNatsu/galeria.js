@@ -1,52 +1,50 @@
-  body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
+/* Tu estilo CSS aquí */
+
+ 
       
-      #main-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-      }
 
-      #image-container {
-        width: 800px;
-        height: 600px;
-        border: 2px solid #333;
-        overflow: hidden;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+  #main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     
+    }
 
-      #image {
-        max-width: 100%;
-        max-height: 100%;
-      }
+    #image-container {
+      width: 767px;
+      height: 1000px;
+      border: 2px solid #333;
+      overflow: hidden;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-      #loading-indicator {
-        display: none;
-      }
+    #image {
+      max-width: 100%;
+      max-height: 100%;
+    }
 
-      #button-container {
-        margin-top: 20px;
-        text-align: center;
-      }
-      
-      .btn {
-        padding: 12px 24px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-        margin: 5px;
-        width: auto;
-        transition: background-color 0.3s, color 0.3s;
-      }
-      
+    #loading-indicator {
+      display: none;
+    }
+
+    #button-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin: 5px;
+      width: auto;
+      transition: background-color 0.3s, color 0.3s;
+    }
       #prevBtn, #nextBtn {
         background-color: #3498db; /* Color azul */
         color: #fff;
@@ -109,3 +107,29 @@
         font-size: 16px;
         color: red;
       }
+         @media screen and (max-width: 1200px) {
+      /* Estilos para dispositivos móviles */
+      #image-container {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #333;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+       @media screen and (max-width: 767px) {
+      /* Estilos para dispositivos móviles */
+      #image-container {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #333;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
